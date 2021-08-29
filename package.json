@@ -15,16 +15,6 @@
     "dist"
   ],
   "scripts": {
-    "predev": "npm run clean",
-    "dev": "tsc-watch --sourceMap --onSuccess 'npm run tscrp'",
-    "prebuild": "npm run clean",
-    "build": "tsc",
-    "postbuild": "npm run tscrp",
-    "prepare": "husky install",
-    "prepublishOnly": "npm run build",
-    "test": "exit 0",
-    "tscrp": "tsconfig-replace-paths --project tsconfig.json",
-    "clean": "rm -rf dist/",
     "lint": "eslint --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --write --ignore-unknown"

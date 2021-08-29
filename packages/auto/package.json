@@ -29,5 +29,6 @@
     "@gloxy/unilog": "^1.2.0",
     "tslib": "^2.3.0",
     "type-fest": "^0.20.2"
-  }
+  },
+  "gitHead": "8cc57b886285f29e2cd8f4d562883a30d5991c56"
 }
