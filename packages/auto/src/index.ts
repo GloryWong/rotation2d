@@ -1,5 +1,5 @@
 import { Merge, ValueOf, SetOptional } from 'type-fest'
-import { BaseRotation2d, BaseOptions, El, Action } from '../../base'
+import { BaseRotation2d, BaseOptions, El, Action } from '@gloxy/rotation2d-base'
 import Timer from '@gloxy/timer'
 
 export type AutoOptions = Merge<BaseOptions, {}>

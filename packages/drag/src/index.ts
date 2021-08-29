@@ -6,7 +6,7 @@ import {
   CallbackParams,
   El,
   BaseOptions,
-} from '../../base'
+} from '@gloxy/rotation2d-base'
 
 export type InteractionEvent = MouseEvent | TouchEvent
 

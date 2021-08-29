@@ -1,7 +1,6 @@
 {
   "name": "@gloxy/rotation2d-base",
   "version": "0.0.0",
-  "private": true,
   "description": "> TODO: description",
   "author": "Glory Wong Zhaohui <glorywong1001@gmail.com>",
   "homepage": "https://github.com/GloryWong/rotation2d/tree/main/packages/base#readme",
