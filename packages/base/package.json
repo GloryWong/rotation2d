@@ -7,6 +7,9 @@
   "license": "MIT",
   "main": "lib/index.js",
   "exports": "./lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -30,5 +33,5 @@
     "tslib": "^2.3.0",
     "type-fest": "^0.20.2"
   },
-  "gitHead": "8cc57b886285f29e2cd8f4d562883a30d5991c56"
+  "gitHead": "c7c1e5f4fce2363c63e3e4184b07b2f68f394d05"
 }
