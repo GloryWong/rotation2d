@@ -29,10 +29,11 @@
     "clean": "rm -rf lib/"
   },
   "dependencies": {
+    "@gloxy/rotation2d-base": "^0.0.1-alpha.0.0",
     "@gloxy/timer": "^0.0.2",
     "@gloxy/unilog": "^1.2.0",
     "tslib": "^2.3.0",
     "type-fest": "^0.20.2"
   },
-  "gitHead": "c7c1e5f4fce2363c63e3e4184b07b2f68f394d05"
+  "gitHead": "ab2201d0b5422a7a27da24c294caf21b083e543b"
 }

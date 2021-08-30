@@ -1,25 +1,12 @@
 {
   "name": "root",
-  "version": "0.0.1",
-  "description": "rotation2d",
   "private": true,
-  "author": "Glory Wong Zhaohui <glorywong1001@gmail.com>",
-  "main": "index.js",
-  "bugs": "https://github.com/GloryWong/rotation2d/issues",
-  "homepage": "https://github.com/GloryWong/rotation2d#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GloryWong/rotation2d.git"
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "lint": "eslint --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
-    "prettier": "prettier --write --ignore-unknown"
+    "prettier": "prettier --write --ignore-unknown",
+    "dev": "lerna run dev --stream"
   },
-  "keywords": [],
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",

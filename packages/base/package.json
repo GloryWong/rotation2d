@@ -20,7 +20,7 @@
   "scripts": {
     "predev": "npm run clean",
     "dev": "tsc-watch --sourceMap --onSuccess 'npm run tscrp'",
-    "// prebuild": "npm run clean",
+    "prebuild": "npm run clean",
     "build": "tsc",
     "postbuild": "npm run tscrp",
     "prepublishOnly": "npm run build",
@@ -29,6 +29,7 @@
     "clean": "rm -rf lib/"
   },
   "dependencies": {
+    "@gloxy/timer": "^0.0.2",
     "@gloxy/unilog": "^1.2.0",
     "tslib": "^2.3.0",
     "type-fest": "^0.20.2"

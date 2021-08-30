@@ -29,6 +29,8 @@
     "clean": "rm -rf lib/"
   },
   "dependencies": {
+    "@gloxy/rotation2d-base": "^0.0.1-alpha.0.0",
+    "@gloxy/timer": "^0.0.2",
     "@gloxy/unilog": "^1.2.0",
     "tslib": "^2.3.0",
     "type-fest": "^0.20.2"
