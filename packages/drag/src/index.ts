@@ -3,20 +3,12 @@ import {
   BaseRotation2d,
   Pos,
   Action,
-  CallbackParams,
   El,
   BaseOptions,
+  CallbackParams,
 } from '@gloxy/rotation2d-base'
 
 export type InteractionEvent = MouseEvent | TouchEvent
-
-export type DragCallbackParams = Merge<
-  CallbackParams,
-  {
-    startAngle: number
-    flyingAngle: number
-  }
->
 
 /// consturctor parameters ///
 export type InteractionEl = HTMLElement | string
@@ -81,12 +73,11 @@ export class DragRotation2d extends BaseRotation2d {
 
   /// callbacks ///
 
-  protected createCallbackParams(params?: CallbackParams): CallbackParams {
+  protected createCallbackParams() {
     return {
       ...super.createCallbackParams(),
       startAngle: this.startAngle,
       flyingAngle: this.flyingAngle,
-      ...params,
     }
   }
 

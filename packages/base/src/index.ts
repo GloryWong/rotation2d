@@ -12,13 +12,10 @@ export enum Action {
 }
 
 export type CallbackParams = {
-  el: El
-  rotationOriginPos: Pos
-  angle: number
-  rotating: boolean
-  [extra: string]: JsonValue | Primitive | HTMLElement
+  [extra: string]: Primitive | JsonValue | HTMLElement
 }
-export type Callback = (callbackParams: CallbackParams) => void
+
+export type Callback = (parmas: CallbackParams) => void
 export type Callbacks = Callback | Array<Callback> | Set<Callback>
 export type CallbackCollection = Partial<Record<Action, Callbacks>>
 type InnerCallbackCollection = Record<Action, Set<Callback>>
@@ -221,13 +218,12 @@ export abstract class BaseRotation2d {
     return this
   }
 
-  protected createCallbackParams(params?: CallbackParams): CallbackParams {
+  protected createCallbackParams(): CallbackParams {
     return {
       el: this.el,
       rotationOriginPos: this.rotationOriginPos,
       angle: this.angle,
       rotating: this.rotating,
-      ...params,
     }
   }
 }
