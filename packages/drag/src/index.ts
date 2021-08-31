@@ -10,6 +10,14 @@ import {
 
 export type InteractionEvent = MouseEvent | TouchEvent
 
+export type DragCallbackParams = Merge<
+  CallbackParams,
+  {
+    startAngle: number
+    flyingAngle: number
+  }
+>
+
 /// consturctor parameters ///
 export type InteractionEl = HTMLElement | string
 export type DragOptions = Merge<
@@ -73,7 +81,7 @@ export class DragRotation2d extends BaseRotation2d {
 
   /// callbacks ///
 
-  protected createCallbackParams() {
+  protected createCallbackParams(): DragCallbackParams {
     return {
       ...super.createCallbackParams(),
       startAngle: this.startAngle,
